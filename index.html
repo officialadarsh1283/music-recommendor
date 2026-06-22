@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Music Recommender</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎵 Mood Music Recommender</h1>
+
+      <label>Select Mood:</label>
+      <select id="mood">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="bhakti">Bhakti</option>
+        <option value="romantic">Romantic</option>
+        <option value="motivated">Motivated</option>
+      </select>
+
+      <label>Select Emotion:</label>
+      <select id="emotion">
+        <option value="calm">Calm</option>
+        <option value="heartbroken">Heartbroken</option>
+        <option value="classic">Classic</option>
+        <option value="pain">Dard Bhara</option>
+        <option value="excited">Excited</option>
+        <option value="nostalgic">Nostalgic</option>
+      </select>
+
+      <h3>Choose Industry</h3>
+
+      <div class="checkboxes">
+        <label><input type="checkbox" value="bollywood" /> Bollywood</label>
+        <label><input type="checkbox" value="hollywood" /> Hollywood</label>
+        <label><input type="checkbox" value="tollywood" /> Tollywood</label>
+      </div>
+
+      <button onclick="recommendSongs()">Suggest Songs</button>
+
+      <div id="player-container"></div>
+      <div id="result"></div>
+    </div>
+
+    <script src="aiscript.js"></script>
+  </body>
+</html>
