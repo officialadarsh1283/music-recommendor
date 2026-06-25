@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  background-size: 500000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+}
+
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  background: #ff4b5c;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #ff2e44;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+#result {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+.song-link {
+  text-decoration: none;
+  color: white;
+}
+.song {
+  padding: 8px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.song:hover {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+#player-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#player-container iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 12px;
+}
+
+.song-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.song-card:hover {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.thumbnail {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.song-title {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
